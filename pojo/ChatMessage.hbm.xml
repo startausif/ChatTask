@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+	<class name="com.chat.pojo.ChatMessage" table="chatmessage">
+		<id name="id" type="long" column="Id">
+			<generator class="identity" />
+		</id>
+		<property name="Message">
+			<column name="Message" />
+		</property>
+		<property name="userName">
+			<column name="userName" />
+		</property>
+		<property name="MsgTime">
+			<column name="MsgTime" />
+		</property>
+		<property name="colorSelected">
+			<column name="colorSelected" />
+		</property>
+		<property name="status">
+			<column name="status" />
+		</property>
+	</class>
+</hibernate-mapping>
